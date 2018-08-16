@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <test name="Test1(failed)" parallel="methods">
+    <parameter name="platformVersion_" value="Version_One"/>
+    <parameter name="URL_" value="127.0.0.0:8080/wd/hub"/>
+    <parameter name="UDID_" value="UDID_One"/>
+    <parameter name="deviceName_" value="device_One"/>
+    <classes>
+      <class name="com.LibreTaximeter.libreTaximeter.SuccessfulPairingTest">
+        <methods>
+          <include name="verifyElementstest"/>
+        </methods>
+      </class> <!-- com.LibreTaximeter.libreTaximeter.SuccessfulPairingTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

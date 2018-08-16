@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel="methods" thread-count="2" >
+	<test name="Test1">
+		<parameter name="deviceName_" value="device_One"/>
+		<parameter name="UDID_" value="UDID_One"/>
+		<parameter name="platformVersion_" value="Version_One"/>
+		<parameter name="URL_" value="127.0.0.1:4723/wd/hub"/>
+		<parameter name="URL_" value="127.0.0.0:8080/wd/hub"/>
+		<classes>
+			<class name="com.LibreTaximeter.libreTaximeter.SuccessfulPairingTest"/>
+		</classes>
+		</test>
+		</suite>
